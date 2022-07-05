@@ -1,5 +1,5 @@
 ---
-title: "RFC9250中文：HTTP/3"
+title: "RFC9250中文：QUIC DNS"
 anchor: "RFC9250"
 weight: 400
 rank: "sub_page"
