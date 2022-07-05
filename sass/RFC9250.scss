@@ -1,0 +1,7 @@
+@import "RFC9250_Variables";
+@import "template";
+
+.sidebar.sidebar-rfc9250 {
+    color: $sidebar_colour;
+    background-color: $sidebar_background_colour;
+}
