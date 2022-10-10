@@ -19,7 +19,7 @@ DoQ映射的目标是：
 
 1. Provide the same DNS privacy protection as DoT [RFC7858]. This includes an option for the client to authenticate the server by means of an authentication domain name as specified in "Usage Profiles for DNS over TLS and DNS over DTLS" [RFC8310].
 
-1. 提供与DoT（详见《[RFC7858]()》）一致的DNS隐私保护。这包括为客户端提供一项可选的使用认证域名来验证服务器身份的机制，《基于TLS和DTLS的DNS的使用说明》（详见《[RFC8310]()》）中介绍了这项机制。
+1. 提供与DoT（详见《[RFC7858]()》）一致的DNS隐私保护。这包括为客户端提供一项可选的使用认证域名来验证服务器身份的机制，《基于TLS和DTLS的DNS的配置用例》（详见《[RFC8310]()》）中介绍了这项机制。
 
 2. Provide an improved level of source address validation for DNS servers compared to classic DNS over UDP.
 
