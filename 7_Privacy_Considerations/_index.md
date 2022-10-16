@@ -1,5 +1,5 @@
 ---
-title: "7. 隐私上的考量"
+title: "7. 关于隐私的考量"
 anchor: "7_Privacy_Considerations"
 weight: 700
 rank: "h1"

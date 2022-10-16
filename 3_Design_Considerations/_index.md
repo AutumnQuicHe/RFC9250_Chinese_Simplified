@@ -1,5 +1,5 @@
 ---
-title: "3. 设计上的考量"
+title: "3. 关于设计的考量"
 anchor: "3_Design_Considerations"
 weight: 300
 rank: "h1"

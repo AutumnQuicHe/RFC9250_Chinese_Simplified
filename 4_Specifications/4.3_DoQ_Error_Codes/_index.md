@@ -14,7 +14,7 @@ No error. This is used when the connection or stream needs to be closed, but the
 
 DOQ_NO_ERROR（无错误，值为`0x0`）：
 
-:   没有发生错误。它被用于需要关闭连接或流，但没有错误可以报告的情形。
+:   没有错误发生。它被用于需要关闭连接或流，但没有错误可以报告的情形。
 
 DOQ_INTERNAL_ERROR (0x1):
 The DoQ implementation encountered an internal error and is incapable of pursuing the transaction or the connection.
@@ -47,14 +47,14 @@ DOQ_EXCESSIVE_LOAD（负载过量，值为`0x4`）：
 DOQ_UNSPECIFIED_ERROR (0x5):
 A DoQ implementation uses this in the absence of a more specific error code.
 
-DOQ_UNSPECIFIED_ERROR（未知错误，值为`0x5`）：
+DOQ_UNSPECIFIED_ERROR（未指定的错误，值为`0x5`）：
 
 :   在找不到更准确的错误码时，DoQ实现会使用该错误码。
 
 DOQ_ERROR_RESERVED (0xd098ea5e):
 An alternative error code used for tests.
 
-DOQ_ERROR_RESERVED（无错误，值为`0xd098ea5e`）：
+DOQ_ERROR_RESERVED（值为`0xd098ea5e`）：
 
 :   用于测试的备用错误码。
 
