@@ -14,7 +14,8 @@ No error. This is used when the connection or stream needs to be closed, but the
 
 DOQ_NO_ERROR（无错误，值为`0x0`）：
 
-:   没有错误发生。它被用于需要关闭连接或流，但没有错误可以报告的情形。
+:   没有错误发生。
+它被用于需要关闭连接或流，但没有错误可以报告的情形。
 
 DOQ_INTERNAL_ERROR (0x1):
 The DoQ implementation encountered an internal error and is incapable of pursuing the transaction or the connection.

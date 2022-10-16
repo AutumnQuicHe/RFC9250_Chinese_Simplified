@@ -7,11 +7,13 @@ rank: "h1"
 
 Domain Name System (DNS) concepts are specified in "Domain names - concepts and facilities" [RFC1034]. The transmission of DNS queries and responses over UDP and TCP is specified in "Domain names - implementation and specification" [RFC1035].
 
-域名系统（DNS）这一概念是在《域名——概念与基础设施》（详见《[RFC1034]()》）中建立的。《域名——实现与规范》（详见《[RFC1035]()》）则介绍了DNS查询与响应基于UDP和TCP的传输方式。
+域名系统（DNS）这一概念是在《域名——概念与基础设施》（详见《[RFC1034]()》）中建立的。
+《域名——实现与规范》（详见《[RFC1035]()》）则介绍了DNS查询与响应基于UDP和TCP的传输方式。
 
 This document presents a mapping of the DNS protocol over the QUIC transport [RFC9000] [RFC9001]. DNS over QUIC is referred to here as DoQ, in line with "DNS Terminology" [DNS-TERMS].
 
-本文档描述了DNS协议的一种基于QUIC传输（详见《[RFC9000]()》和《[RFC9001]()》）的映射。下文使用DoQ来指代基于QUIC的DNS，这是符合“DNS术语”（详见《[DNS-TERMS]()》）的。
+本文档描述了DNS协议的一种基于QUIC传输（详见《[RFC9000]()》和《[RFC9001]()》）的映射。
+下文使用DoQ来指代基于QUIC的DNS，这是符合“DNS术语”（详见《[DNS-TERMS]()》）的。
 
 The goals of the DoQ mapping are:
 
@@ -19,7 +21,8 @@ DoQ映射的目标是：
 
 1. Provide the same DNS privacy protection as DoT [RFC7858]. This includes an option for the client to authenticate the server by means of an authentication domain name as specified in "Usage Profiles for DNS over TLS and DNS over DTLS" [RFC8310].
 
-1. 提供与DoT（详见《[RFC7858]()》）一致的DNS隐私保护。这包括为客户端提供一项可选的使用认证域名来验证服务器身份的机制，《基于TLS和DTLS的DNS的配置用例》（详见《[RFC8310]()》）中介绍了这项机制。
+1. 提供与DoT（详见《[RFC7858]()》）一致的DNS隐私保护。
+这包括为客户端提供一项可选的使用认证域名来验证服务器身份的机制，《基于TLS和DTLS的DNS的配置用例》（详见《[RFC8310]()》）中介绍了这项机制。
 
 2. Provide an improved level of source address validation for DNS servers compared to classic DNS over UDP.
 
@@ -63,12 +66,18 @@ The specific non-goals of this document are:
 
 Specifying the transmission of an application over QUIC requires specifying how the application's messages are mapped to QUIC streams, and generally how the application will use QUIC. This is done for HTTP in "Hypertext Transfer Protocol Version 3 (HTTP/3)" [HTTP/3]. The purpose of this document is to define the way DNS messages can be transmitted over QUIC.
 
-要为基于QUIC的应用制定传输方式，需要规定如何将应用消息映射到QUIC流上，以及指定应用如何使用QUIC。《超文本传输协议版本3（HTTP/3）》（详见《[HTTP/3]()》）中就是这么做的。本文档的意图是定义如何经由QUIC来传输DNS消息。
+要为基于QUIC的应用制定传输方式，需要规定如何将应用消息映射到QUIC流上，以及指定应用如何使用QUIC。
+《超文本传输协议版本3（HTTP/3）》（详见《[HTTP/3]()》）中就是这么做的。
+本文档的意图是定义如何经由QUIC来传输DNS消息。
 
 DNS over HTTPS (DoH) [RFC8484] can be used with HTTP/3 to get some of the benefits of QUIC. However, a lightweight direct mapping for DoQ can be regarded as a more natural fit for both the recursive to authoritative and zone transfer scenarios, which rarely involve intermediaries. In these scenarios, the additional overhead of HTTP is not offset by, for example, benefits of HTTP proxying and caching behavior.
 
-可以结合使用HTTP/3和经由HTTPS的DNS（DoH，详见《[RFC8484]()》）来利用QUIC的部分优势。然而，直接且轻量的DoQ映射天生更适用于权威性递归和区域传送的场景，这些场景几乎不会牵涉到中间设备。而在这些场景中，HTTP的额外开销并不会因为HTTP代理或缓存行为而被消除。
+可以结合使用HTTP/3和经由HTTPS的DNS（DoH，详见《[RFC8484]()》）来利用QUIC的部分优势。
+然而，直接且轻量的DoQ映射天生更适用于权威性递归和区域传送的场景，这些场景几乎不会牵涉到中间设备。
+而在这些场景中，HTTP的额外开销并不会因为HTTP代理或缓存行为而被消除。
 
 In this document, Section 3 presents the reasoning that guided the proposed design. Section 4 specifies the actual mapping of DoQ. Section 5 presents guidelines on the implementation, usage, and deployment of DoQ.
 
-在本文档中，[第3章]()介绍了本设计是如何成型的。[第4章]()规定了DoQ实际的映射方式。[第5章]()指导了如何实现、使用和部署DoQ。
+在本文档中，[第3章]()介绍了本设计是如何成型的。
+[第4章]()规定了DoQ实际的映射方式。
+[第5章]()指导了如何实现、使用和部署DoQ。
