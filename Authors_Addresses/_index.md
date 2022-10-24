@@ -51,5 +51,8 @@ Email: [allison.mankin@gmail.com](mailto:allison.mankin@gmail.com)
 - [Yunzhe](https://github.com/YunzheZJU)
     - Email: yunzhe@zju.edu.cn
 
+- [ruokeqx](https://github.com/ruokeqx)
+    - Email: ruokeqx@163.com
+
 - [方秋航](https://github.com/fangqiuhang)
     - Email: fangqiuhang@163.com
