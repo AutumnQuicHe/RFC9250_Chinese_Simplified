@@ -12,7 +12,7 @@ This appendix discusses why it is considered acceptable to send NOTIFY (see [RFC
 Section 4.5 says "The 0-RTT mechanism MUST NOT be used to send DNS requests that are not "replayable" transactions". This specification supports sending a NOTIFY in 0-RTT data because although a NOTIFY technically changes the state of the receiving server, the effect of replaying NOTIFYs has negligible impact in practice.
 
 [第4.5章]()中提到，**必须不**使用0-RTT机制来发送并非“可重放”事务的DNS请求。
-本规范支持在0-RTT数据中发送NOTIFY的原因是尽管技术上NOTIFY会改变接收它的服务器的状态，但是重放NOTIFY产生的实际效果微乎其微。
+本规范支持在0-RTT数据中发送NOTIFY的原因是尽管技术上NOTIFY会改变接收它的服务器的状态，但是重放NOTIFY所能够造成的实际影响微乎其微。
 
 NOTIFY messages prompt a secondary to either send an SOA query or an XFR request to the primary on the basis that a newer version of the zone is available. It has long been recognized that NOTIFYs can be forged and, in theory, used to cause a secondary to send repeated unnecessary requests to the primary. For this reason, most implementations have some form of throttling of the SOA/XFR queries triggered by the receipt of one or more NOTIFYs.
 
