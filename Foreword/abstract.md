@@ -5,4 +5,7 @@ weight: 10
 rank: "h2"
 ---
 
-This document describes the use of QUIC to provide transport confidentiality for DNS. The encryption provided by QUIC has similar properties to those provided by TLS, while QUIC transport eliminates the head-of-line blocking issues inherent with TCP and provides more efficient packet-loss recovery than UDP. DNS over QUIC (DoQ) has privacy properties similar to DNS over TLS (DoT) specified in RFC 7858, and latency characteristics similar to classic DNS over UDP. This specification describes the use of DoQ as a general-purpose transport for DNS and includes the use of DoQ for stub to recursive, recursive to authoritative, and zone transfer scenarios.
+本文档描述了如何使用QUIC来为DNS提供传输层上的机密性。
+QUIC与TLS提供的两种加密间具有相似的特性，但是QUIC传输能够避免TCP传输带来的队头阻塞问题，并且有着比起UDP更高效的丢包恢复机制。
+基于QUIC的DNS（DoQ）在隐私方面的属性与RFC 7858中定义的基于TLS的DNS（DoT）类似，在延迟方面的特征与传统的基于UDP的DNS类似。
+本规范描述了如何将DoQ用作一种通用的DNS传输方法，还涉及到如何将DoQ用于存根解析器与递归解析器的交互、递归解析器与权威域名服务器的交互，以及区域传送等场景。
