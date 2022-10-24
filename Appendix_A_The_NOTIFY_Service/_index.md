@@ -18,7 +18,7 @@ NOTIFY messages prompt a secondary to either send an SOA query or an XFR request
 
 NOTIFY消息向辅服务器发出提醒，使其根据是否有新版本的可用区域来向主服务器发送SOA查询或XFR请求。
 NOTIFY可以被伪造，并且理论上可以被用来使辅服务器向主服务器发送重复的冗余请求，这是众所周知的。
-基于这个原因，大多数实现都具有某种限制因接收到NOTIFY而触发的SOA/XFR查询的频次的机制。
+基于这个原因，大多数实现都具有某种机制，从而限制因接收到NOTIFY而触发的SOA/XFR查询频次。
 
 [RFC9103] describes the privacy risks associated with both NOTIFY and SOA queries and does not include addressing those risks within the scope of encrypting zone transfers. Given this, the privacy benefit of using DoQ for NOTIFY is not clear, but for the same reason, sending NOTIFY as 0-RTT data has no privacy risk above that of sending it using cleartext DNS.
 
