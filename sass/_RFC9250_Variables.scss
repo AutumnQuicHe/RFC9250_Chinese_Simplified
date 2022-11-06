@@ -1,18 +1,26 @@
-$main_colour: #f1e4b9;
-$theme_colour: #cf9a61; /* Shokuhou Misaki */
-$font_backgroud_colour: #fbf2db;
-/* f6e7c2, */
+$face:#fdf9ce;
+$hair:#101110;
+$dress_light:#52b5bd;
+$dress:#043b5f;
+$dress_deep:#141252;
+$skin:#fdf3d5;
+$skin_shadow:#675335;
+$belt:#e0d782;
+
+$main_colour: $dress;
+$theme_colour: $dress_deep; /* tam, hitomi */
+$font_backgroud_colour: $skin;
 
 $body_colour: $theme_colour;
 $body_backgroud_colour: $font_backgroud_colour;
 $body_font_size: 15px;
-$sidebar_colour: #2f2f2f;
-$sidebar_a_hover_colour: gray;
+$sidebar_colour: $face;
+$sidebar_a_hover_colour: $belt;
 $sidebar_background_colour: $theme_colour;
 $scrollbar_colour: $main_colour;
 $scrollbar_thumb_colour: $body_backgroud_colour;
-$scrollbar_track_colour: $main_colour; /* old #299c69*/
-$header_text_shadow: 2px 4px 5px #2f2f2f;
+$scrollbar_track_colour: $main_colour;
+$header_text_shadow: 2px 2px 5px $dress;
 $header_border_colour: $theme_colour;
 $header_a_colour: $theme_colour;
 $page_table_border: 1px solid $theme_colour;
@@ -20,9 +28,12 @@ $page_table_border: 1px solid $theme_colour;
 /* content */
 $content_code_background: $font_backgroud_colour;
 
-$code_webkit_box_shadow: inset 0 1px 10px #b68d9e4d, 0 1px 0 #ffffff1a, 0 -1px 0 #0000001a;
-$code_moz_box_shadow: inset 0 1px 10px #0000004d, 0 1px 0 #ffffff1a, 0 -1px 0 #0000001a;
-$code_box_shadow: inset 0 1px 10px #0000004d, 0 1px 0 #ffffff1a, 0 -1px 0 #0000001a;
+$code_box_shadow_colour1: $dress_light;
+$code_box_shadow_colour2: $belt;
+$code_box_shadow_colour3: $face;
+$code_webkit_box_shadow: inset 0 1px 10px $code_box_shadow_colour1, 0 1px 0 $code_box_shadow_colour2, 0 -1px 0 $code_box_shadow_colour3;
+$code_moz_box_shadow: inset 0 1px 10px $code_box_shadow_colour1, 0 1px 0 $code_box_shadow_colour2, 0 -1px 0 $code_box_shadow_colour3;
+$code_box_shadow: inset 0 1px 10px $code_box_shadow_colour1, 0 1px 0 $code_box_shadow_colour2, 0 -1px 0 $code_box_shadow_colour3;
 
 $content_em_strong_text_shadow: 1px 1px 2px $main_colour;
 $content_em_strong_colour: $theme_colour;
