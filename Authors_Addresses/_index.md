@@ -1,7 +1,7 @@
 ---
 title: "联系作者"
 anchor: "Authors_Addresses"
-weight: 150000
+weight: 1200
 rank: "h1"
 ---
 
