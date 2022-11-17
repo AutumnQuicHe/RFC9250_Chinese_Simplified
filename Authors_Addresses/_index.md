@@ -1,14 +1,7 @@
 ---
-title: "12. NOTIFY服务"
-anchor: "Authors_Addresses"
-weight: 1200
-rank: "h1"
----
-
----
 title: "联系作者"
 anchor: "Authors_Addresses"
-weight: 150000
+weight: 1200
 rank: "h1"
 ---
 
@@ -37,7 +30,7 @@ OX4 4GA
 
 United Kingdom
 
-Email: [sara@sinodun.com](sara@sinodun.com)
+Email: [sara@sinodun.com](mailto:sara@sinodun.com)
 
 
 ##### Allison Mankin
