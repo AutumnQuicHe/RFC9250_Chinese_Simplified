@@ -1,5 +1,5 @@
 ---
-title: "10. NOTIFY服务"
+title: "附录A. NOTIFY服务"
 anchor: "Appendix_A_The_NOTIFY_Service"
 weight: 1000
 rank: "h1"
