@@ -36,4 +36,4 @@ DOQ_ERROR_RESERVED（值为`0xd098ea5e`）：
 
 :   用于测试的备用错误码。
 
-有关注册新错误码的细节，详见[第8.4章]()。
+有关注册新错误码的细节，详见[第8.4章](#8.4_DNS-over-QUIC_Error_Codes_Registry)。
